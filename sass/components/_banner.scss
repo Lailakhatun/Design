@@ -1,0 +1,53 @@
+#banner_part{
+    padding:130px 0px 160px;
+    background:linear-gradient(#660f3c ,#330733);
+    .banner_text{
+    h2{
+        @include fnts(#fff, 44px, 800, $Nunito);
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+    h1{
+        @include fnts(#fff, 44px, 800, $Nunito);
+        text-transform: capitalize;
+        margin-bottom: 20px; 
+    }
+    p{
+        @include fnts(#fff,18px, 400, $Nunito);
+        margin-bottom: 15px; 
+        line-height: 28px; 
+    }
+    b{
+        display: block;
+        @include fnts(#fff,16px, 400, $Nunito);
+        text-transform: capitalize;
+        margin-bottom: 5px;
+        padding-left: 40px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 5px;
+            background: #fff;
+            margin-left: 20px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+}
+
+    }
+}
+    .typed-cursor {
+        font-weight: 400;
+        margin-left: 5px;
+        color:#f44336;
+    }
+    .test{
+        color:#f44336;
+    }
+}

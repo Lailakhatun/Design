@@ -1,0 +1,60 @@
+#form_part {
+    background: #ecf0f4;
+    padding: 60px 0;
+
+    .form_text {
+        h3 {
+            @include fnts(#000, 20px, 800, $Nunito);
+            text-transform: uppercase;
+            text-align: right;
+        }
+    }
+        .form_input{
+            padding-bottom: 30px;
+        input {
+            @include fnts(#000, 20px, 300, $Nunito);
+            text-transform: capitalize;
+            padding: 10px 20px;
+            border: 0;
+            outline: 0;
+            border:1px solid #444;
+            background: #fff;
+            margin-right: 10px;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+        }
+        button{
+            padding:0 30px;
+            line-height: 50px;
+            @include fnts(#fff, 16px, 700, $Nunito);
+            background: #f53939;
+            text-transform: uppercase;
+            border:0;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+
+        }
+    }
+    .form_check{
+            input{
+                border:0;
+               background: #fff; 
+               outline: 0;
+            }
+            label{
+                @include fnts(#000, 16px, 400, $Nunito); 
+                text-transform: capitalize !important;
+                margin-left: 5px;
+                a{
+                    @include fnts(#336699, 20px, 700, $Nunito);
+                }
+            }
+        }
+    
+}

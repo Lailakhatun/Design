@@ -1,0 +1,72 @@
+#development_part{
+    padding:100px 0;
+    background: #f7f7f7;
+    text-align: center;
+    a{
+        padding:0 30px;
+        line-height: 50px;
+        @include fnts(#fff, 16px, 700, $Nunito);
+        background: #f53939;
+        margin-top: 60px;
+        text-transform: uppercase;
+    }
+    .common_heading{
+        h2{
+            @include fnts(#000, 36px, 800, $Nunito);
+            padding-bottom: 25px;
+            position: relative;
+            text-transform: capitalize;
+        
+    
+            &::after {
+                position: absolute;
+                content: "";
+                left: 50%;
+                bottom: 0;
+                background: #ff5555;
+                width: 200px;
+                height: 3px;
+                transform: translatex(-50%);
+                -webkit-transform: translatex(-50%);
+                -moz-transform: translatex(-50%);
+                -ms-transform: translatex(-50%);
+                -o-transform: translatex(-50%);
+            } 
+    }
+}
+p{
+    @include fnts(#000, 16px, 300, $Nunito);
+    line-height: 26px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+h5{
+    @include fnts(#000, 18px, 700, $Nunito);
+    line-height: 26px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.quality{
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 35px;
+    i{
+        position: absolute;
+        left: 0;
+        top: 6px;
+        font-size: 20px;
+        color:#336699;
+
+    }
+
+    h5{
+        @include fnts(#000, 20px, 700, $Nunito);
+        span{
+            @include fnts(#000, 16px, 300, $Nunito);
+            line-height: 26px;
+            margin-left: 10px;
+            text-align: left;
+        }
+    }
+}
+}

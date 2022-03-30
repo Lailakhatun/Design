@@ -1,0 +1,110 @@
+#clinet_part {
+    padding: 100px 0;
+    text-align: center;
+    a{
+        padding:0 30px;
+        line-height: 60px;
+        @include fnts(#336699, 20px, 300, $Nunito);
+        text-transform: uppercase;
+        border:1px solid #336699;
+        margin-top: 50px;
+        i{
+            font-size: 20px;
+            color:#336699;
+            margin-left: 10px;
+        }
+
+    }
+
+    .common_heading {
+        h2 {
+            @include fnts(#000, 36px, 800, $Nunito);
+            padding-bottom: 25px;
+            position: relative;
+            text-transform: capitalize;
+
+            &::after {
+                position: absolute;
+                content: "";
+                left: 50%;
+                bottom: 0;
+                background: #ff5555;
+                width: 200px;
+                height: 3px;
+                transform: translatex(-50%);
+                -webkit-transform: translatex(-50%);
+                -moz-transform: translatex(-50%);
+                -ms-transform: translatex(-50%);
+                -o-transform: translatex(-50%);
+            }
+        }
+    }
+
+    .client_image {
+        img {
+           margin:auto;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+
+        h5 {
+            @include fnts(#000, 16px, 700, $Nunito);
+            text-transform: capitalize;
+            margin-top: 5px;
+        }
+
+        p {
+            @include fnts(#000, 20px, 300, $Nunito);
+        }
+
+        span {
+            @include fnts(#000, 16px, 300, $Nunito);
+
+        }
+    }
+
+    .client_text {
+        p {
+            @include fnts(#000, 20px, 300, $Nunito);
+            line-height: 26px;
+            margin-top: 100px;
+            text-align: left;
+
+            span {
+                @include fnts(#000, 20px, 300, $Nunito);
+                display: block;
+                padding-top: 30px;
+            }
+        }
+    }
+    .next-ar{
+        position: absolute;
+        right: -50px;
+        color:#d3dbde;
+        font-size: 30px;
+        width: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+}
+.prev-ar{
+    position: absolute;
+    left: -30px;
+    color:#d3dbde;
+    font-size: 30px;
+    width: auto;
+    z-index: 999;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+}

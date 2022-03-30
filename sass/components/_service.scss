@@ -1,0 +1,59 @@
+#service_part {
+    padding: 110px 0px 35px;
+
+    .common_heading {
+        margin-bottom: 95px;
+        h2 {
+            @include fnts(#000, 36px, 800, $Nunito);
+            padding-bottom: 25px;
+            position: relative;
+            text-transform: capitalize;
+
+            &::after {
+                position: absolute;
+                content: "";
+                left: 50%;
+                bottom: 0;
+                background: #ff5555;
+                width: 200px;
+                height: 3px;
+                transform: translatex(-50%);
+                -webkit-transform: translatex(-50%);
+                -moz-transform: translatex(-50%);
+                -ms-transform: translatex(-50%);
+                -o-transform: translatex(-50%);
+            }
+        }
+    }
+    .service_text{
+        position: relative;
+        padding-left: 105px;
+        margin-right: 50px;
+        &:nth-child(2):nth-child(4):nth-child(6){
+                margin-right: 0 !important;
+        }
+        h5{
+            @include fnts(#000, 18px, 700, $Nunito); 
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        img{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            margin-right: 50px;
+        }
+        p{
+            @include fnts(#222, 16px, 300, $Nunito);
+            line-height: 26px;
+        }
+
+    }
+    .ser_bottom{
+        margin-bottom: 90px;
+    }
+    .ser_right{
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,120 @@
+#footer_part {
+    background: #003859;
+
+    .foot-1 {
+        padding: 80px 0;
+        border-bottom: 1px solid #7f9bac;
+
+        .footer_text {
+
+            p {
+                @include fnts(#fff, 16px, 400, $Nunito);
+                line-height: 26px;
+                margin: 20px 0;
+                text-transform: capitalize;
+                padding-left: 40px;
+                position: relative;
+
+                i {
+                    color: #7f9bac;
+                    font-size: 20px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+
+            a {
+                @include fnts(#fff, 16px, 400, $Nunito);
+                margin-bottom: 20px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                i {
+                    color: #7f9bac;
+                    font-size: 20px;
+                    margin-right: 20px;
+                }
+            }
+
+            .suma {
+                img {
+                    height: 20px;
+                    margin-right: 20px;
+                }
+
+                a {
+                    @include fnts(#fff, 16px, 400, $Nunito);
+                    margin-bottom: 45px;
+                    text-decoration: underline;
+                }
+            }
+
+            .icon {
+                a {
+                    i {
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        font-size: 16px;
+                        background: #00243a;
+                        color: #fff;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        transition: $trans;
+                        -webkit-transition: $trans;
+                        -moz-transition: $trans;
+                        -ms-transition: $trans;
+                        -o-transition: $trans;
+
+                        &:hover {
+                            color: #00243a;
+                            background: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .text{
+            h3{
+                @include fnts(#fff, 25px, 700, $Nunito);
+                text-transform: capitalize;
+                margin-bottom: 40px;
+            }
+            ul{
+                li{
+                    a{
+                        @include fnts(#fff, 16px, 400, $Nunito);
+                        text-transform: capitalize;
+                        margin-bottom:20px;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .foot-2{
+        padding:50px 0;
+        .foot-2-text{
+            p{
+                @include fnts(#fff, 16px, 400, $Nunito);
+                a{
+                    @include fnts(#fff, 16px, 400, $Nunito);
+                    text-transform: capitalize;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

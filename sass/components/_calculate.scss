@@ -1,0 +1,58 @@
+#calculate_part {
+    padding: 0 0 100px;
+
+    .common_heading {
+        h2 {
+            @include fnts(#000, 36px, 800, $Nunito);
+            padding-bottom: 25px;
+            position: relative;
+            text-transform: capitalize;
+
+            &::after {
+                position: absolute;
+                content: "";
+                left: 50%;
+                bottom: 0;
+                background: #ff5555;
+                width: 200px;
+                height: 3px;
+                transform: translatex(-50%);
+                -webkit-transform: translatex(-50%);
+                -moz-transform: translatex(-50%);
+                -ms-transform: translatex(-50%);
+                -o-transform: translatex(-50%);
+            }
+        }
+        p{
+            margin:40px 0;
+            @include fnts(#000, 16px, 300, $Nunito);
+            line-height: 26px;
+
+        }
+    }
+
+    .calculate_text {
+        position: relative;
+        padding-left: 100px;
+
+        h4 {
+            @include fnts(#000, 20px, 700, $Nunito);
+            text-transform: uppercase;
+        }
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+
+        }
+        .cal{
+            height: 70px;
+        }
+
+        p {
+            @include fnts(#000, 16px, 300, $Nunito);
+            line-height: 26px;
+        }
+    }
+}

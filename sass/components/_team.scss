@@ -1,0 +1,46 @@
+#team_part {
+    padding: 100px 0;
+
+    .common_heading {
+        h2 {
+            @include fnts(#000, 36px, 800, $Nunito);
+            padding-bottom: 25px;
+            position: relative;
+            text-transform: capitalize;
+
+            &::after {
+                position: absolute;
+                content: "";
+                left: 50%;
+                bottom: 0;
+                background: #ff5555;
+                width: 200px;
+                height: 3px;
+                transform: translatex(-50%);
+                -webkit-transform: translatex(-50%);
+                -moz-transform: translatex(-50%);
+                -ms-transform: translatex(-50%);
+                -o-transform: translatex(-50%);
+            }
+        }
+    }
+
+    .team_teax {
+        margin-top: 50px;
+        img {
+            height: 70px;
+        }
+
+        h5 {
+            @include fnts(#000,20px, 700, $Nunito);
+            text-transform: uppercase;
+            margin:20px 0 10px;
+        }
+
+        p {
+            @include fnts(#000, 16px, 400, $Nunito);
+            line-height: 26px;
+        }
+    }
+   
+}

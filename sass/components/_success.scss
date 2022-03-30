@@ -1,0 +1,39 @@
+#success_part {
+    padding: 0px 0 80px;
+
+    ul {
+        li {
+            width: 32.30%;
+            margin-right: 20px;
+            text-align: center;
+            padding: 50px 0;
+            border: 4px solid #ecf0f4;
+            margin-bottom: 20px;
+            position: relative;
+            // padding-left: 100px;
+
+            img.ingineer {
+                height: 70px;
+            }
+
+            h3 {
+                @include fnts(#000, 34px, 700, $Nunito);
+            }
+
+            img {
+                position: absolute;
+                left: 30px;
+                top: 40px;
+            }
+
+            h5 {
+                @include fnts(#000, 20px, 700, $Nunito);
+            }
+
+        }
+
+        .succ_margin {
+            margin-right: 0;
+        }
+    }
+}
